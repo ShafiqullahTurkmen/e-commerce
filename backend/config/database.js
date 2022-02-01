@@ -9,9 +9,7 @@ const connectDB = () => {
     .then((data) => {
       console.log(`MongoAtlas connected with server: ${data.connection.host}`);
     })
-    .catch((error) => {
-      console.log(error);
-    });
+    
 };
-
+ 
 module.exports = connectDB;
